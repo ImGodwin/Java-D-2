@@ -3,34 +3,19 @@ import java.util.Scanner;
 public class While {
     public static void main(String[] args) {
 
-        /*Scanner input = new Scanner(System.in);
-        System.out.println("Enter new word: ");
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter new word: :q");
         String userInput = input.nextLine();
 
-        String[] splitStr = userInput.split(",", userInput.length());
-        String letter = "q";
+        do {
 
+            String[] comma = userInput.split("");
+            System.out.println(String.join(",", comma));
 
-       while(splitStr){
-           for(int i = 0; i<splitStr.length; i++){
-               if(letter){
-                   System.out.println("Enter new word: ");
-               }
-           }
-       }
+        }while(!userInput.contains(":q"));
 
-
-        input.close();*/
+        input.close();
 
     }
-   /* public static String[] strPlitter(String word)
-    {
-        while(word)
-        {
-            String[] splitString = word.split(",", word.length());
-            return splitString;
-        }
 
-        return new String[0];
-    }*/
 }
