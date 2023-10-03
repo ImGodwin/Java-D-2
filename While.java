@@ -15,7 +15,7 @@ public class While {
         }while(!userInput.contains(":q"));
 
         input.close();
-
+        System.out.println("Exit");
     }
 
 }
